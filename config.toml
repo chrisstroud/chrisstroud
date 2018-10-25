@@ -28,15 +28,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 #  url = "/"
 
   [[menu.main]]             # config your menu              # 配置目录
-    name = "About"
+   name = "About"
     weight = 10
-    identifier = "about"
+   identifier = "about"
     url = "/about/"
-  [menu.main]]
-  name = "Archives"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
+  #[menu.main]]
+  #name = "Archives"
+  #weight = 20
+  ##identifier = "archives"
+  #url = "/post/"
 
 #[[menu.main]]
 #  name = "Tags"

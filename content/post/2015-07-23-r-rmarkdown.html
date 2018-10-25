@@ -4,9 +4,8 @@ date: 2017-08-31T15:43:48+08:00
 lastmod: 2017-08-31T15:43:48+08:00
 draft: false
 author: "Chris Stroud"
-
 autoCollapseToc: false
-contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
+
 
 ---
 
@@ -14,7 +13,7 @@ contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="n
 
 <div id="objective" class="section level1">
 <h1>Objective</h1>
-<p>The purpose of this blah</p>
+<p>The purpose of this blah blah</p>
 <pre class="r"><code>##############################
 # - Load librairies
 ##############################
@@ -28,4 +27,15 @@ myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-784
 
 df &lt;- read.csv(textConnection(myfile), header=T)
 </code></pre>
+<p>testing</p>
+<pre class="r"><code>df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows))
+## # A tibble: 6 x 2
+##   Season   test
+##   &lt;fct&gt;   &lt;dbl&gt;
+## 1 1989-90  42.3
+## 2 1990-91  48.8
+## 3 1991-92  30.4
+## 4 1992-93  46  
+## 5 1993-94  49.8
+## 6 1994-95  47.6</code></pre>
 </div>
