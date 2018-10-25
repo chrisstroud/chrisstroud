@@ -1,68 +1,40 @@
 ---
-title: "Hello R Markdown"
+title: "Machine Learning with Tibbles"
 author: "Chris Stroud"
 date: 2018-10-23T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
-hiddenFromHomePage: false
-hideHeaderAndFooter: false
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-## R Markdown
+# Objective
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The purpose of this blah 
 
-You can embed an R code chunk like this:
 
-```{r cars}
-
+```{r load, message=FALSE, warning=FALSE, paged.print=FALSE}
+##############################
+# - Load librairies
+##############################
 library(dplyr)
 library(ggplot2)
 library(plotly)
 library(gapminder)
 
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
-```
+library(RCurl)
+myfile <- getURL('https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv', ssl.verifyhost=FALSE, ssl.verifypeer=FALSE)
 
-## Including Plots
-
-You can also embed plots. See Figure \@ref(fig:pie) for example:
-
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
-```
-
-
-
-
-```{r iris}
-
-names(iris) <- tolower(names(iris))
+df <- read.csv(textConnection(myfile), header=T)
 
 
 ```
 
-```{r 2}
 
 
-a <- ggplot(iris, aes(sepal.length, sepal.width)) +
-	geom_point(aes(colour = factor(species))) +
-	theme_light() 
-	
-
-ggplotly(a)
 
 
-```
+
+
+
+

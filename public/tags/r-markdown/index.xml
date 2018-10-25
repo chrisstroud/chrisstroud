@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>Hello R Markdown</title>
+      <title>Machine Learning Post</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Tue, 23 Oct 2018 21:13:14 -0500</pubDate>
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
- library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union library(ggplot2) library(plotly) ## ## Attaching package: &amp;#39;plotly&amp;#39; ## The following object is masked from &amp;#39;package:ggplot2&amp;#39;: ## ## last_plot ## The following object is masked from &amp;#39;package:stats&amp;#39;: ## ## filter ## The following object is masked from &amp;#39;package:graphics&amp;#39;: ## ## layout library(gapminder) summary(cars) ## speed dist ## Min.</description>
+############################## # 0 - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) ############################## # 1 - Source file ############################## input_file &amp;lt;- &amp;quot;data/data.csv&amp;quot;   </description>
     </item>
     
   </channel>
