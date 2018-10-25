@@ -1,7 +1,13 @@
 ---
-title: "Machine Learning with Tibbles"
+title: "Test"
+date: 2017-08-31T15:43:48+08:00
+lastmod: 2017-08-31T15:43:48+08:00
+draft: false
 author: "Chris Stroud"
-date: 2018-10-23T21:13:14-05:00
+
+autoCollapseToc: false
+contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
+
 ---
 
 ```{r setup, include=FALSE}
@@ -10,7 +16,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 # Objective
 
-The purpose of this blah 
+The purpose of this blah blah
 
 
 ```{r load, message=FALSE, warning=FALSE, paged.print=FALSE}
@@ -30,8 +36,12 @@ df <- read.csv(textConnection(myfile), header=T)
 
 ```
 
+testing
 
 
+```{r load2, message=FALSE, warning=FALSE}
+df.head()
+```
 
 
 
