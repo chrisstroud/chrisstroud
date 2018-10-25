@@ -127,8 +127,7 @@
   <div class="post-content">
     <div class="post-summary">
       Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46.
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  two column testing df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46.
     </div>
     <div class="read-more">
       <a href="/post/2015-07-23-r-rmarkdown/" class="read-more-link">Read more..</a>

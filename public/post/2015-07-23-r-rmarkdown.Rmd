@@ -37,7 +37,7 @@ df <- read.csv(textConnection(myfile), header=T)
 
 ```
 
-testing
+## two column testing
 
 
 ```{r load2, message=FALSE, warning=FALSE}
@@ -46,6 +46,15 @@ df %>%
 	summarise(test = mean(Tows)) %>% 
 	kable 
 ```
+
+
+
+
+```{r load4, message=FALSE, warning=FALSE}
+df %>% head() %>% 
+	kable 
+```
+
 
 
 ```{r load3, message=FALSE, warning=FALSE}

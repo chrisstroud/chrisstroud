@@ -50,7 +50,7 @@ df %>%
 
 
 
-```{r load2, message=FALSE, warning=FALSE}
+```{r load4, message=FALSE, warning=FALSE}
 df %>% head() %>% 
 	kable 
 ```
