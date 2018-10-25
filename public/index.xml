@@ -18,8 +18,8 @@
       
       <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(RCurl) myfile &amp;lt;- getURL(&amp;#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&amp;#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &amp;lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&amp;gt;% group_by(Season) %&amp;gt;% summarise(test = mean(Tows)) ## # A tibble: 6 x 2 ## Season test ## &amp;lt;fct&amp;gt; &amp;lt;dbl&amp;gt; ## 1 1989-90 42.3 ## 2 1990-91 48.8 ## 3 1991-92 30.4 ## 4 1992-93 46 ## 5 1993-94 49.8 ## 6 1994-95 47.</description>
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(RCurl) myfile &amp;lt;- getURL(&amp;#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&amp;#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &amp;lt;- read.csv(textConnection(myfile), header=T)  testing
+df %&amp;gt;% group_by(Season) %&amp;gt;% summarise(test = mean(Tows)) %&amp;gt;% kable   Season test    1989-90 42.28571  1990-91 48.80000  1991-92 30.37500  1992-93 46.00000  1993-94 49.75000  1994-95 47.62500     </description>
     </item>
     
     <item>
