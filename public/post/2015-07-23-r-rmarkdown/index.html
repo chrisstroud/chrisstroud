@@ -18,8 +18,8 @@
 
 <meta name="author" content="Chris Stroud" />
   <meta name="description" content="Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(RCurl) myfile &amp;lt;- getURL(&amp;#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&amp;#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &amp;lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&amp;gt;% group_by(Season) %&amp;gt;% summarise(test = mean(Tows)) %&amp;gt;% kable   Season test    1989-90 42.28571  1990-91 48.80000  1991-92 30.37500  1992-93 46.00000  1993-94 49.75000  1994-95 47.62500     " />
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &amp;lt;- getURL(&amp;#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&amp;#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &amp;lt;- read.csv(textConnection(myfile), header=T)  testing
+df %&amp;gt;% group_by(Season) %&amp;gt;% summarise(test = mean(Tows)) %&amp;gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46." />
 
   <meta name="keywords" content="data, analytics, data science" />
 
@@ -53,21 +53,21 @@ df %&amp;gt;% group_by(Season) %&amp;gt;% summarise(test = mean(Tows)) %&amp;gt;
 
 <meta property="og:title" content="Test" />
 <meta property="og:description" content="Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable   Season test    1989-90 42.28571  1990-91 48.80000  1991-92 30.37500  1992-93 46.00000  1993-94 49.75000  1994-95 47.62500     " />
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
+df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/post/2015-07-23-r-rmarkdown/" /><meta property="article:published_time" content="2017-08-31T15:43:48&#43;08:00"/>
+<meta property="og:url" content="/post/2015-07-23-r-rmarkdown/" /><meta property="article:published_time" content="2018-10-21T15:43:48&#43;08:00"/>
 <meta property="article:modified_time" content="2017-08-31T15:43:48&#43;08:00"/>
 
 <meta itemprop="name" content="Test">
 <meta itemprop="description" content="Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable   Season test    1989-90 42.28571  1990-91 48.80000  1991-92 30.37500  1992-93 46.00000  1993-94 49.75000  1994-95 47.62500     ">
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
+df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46.">
 
 
-<meta itemprop="datePublished" content="2017-08-31T15:43:48&#43;08:00" />
-<meta itemprop="dateModified" content="2017-08-31T15:43:48&#43;08:00" />
-<meta itemprop="wordCount" content="52">
+<meta itemprop="datePublished" content="2018-10-21T15:43:48&#43;08:00" />
+<meta itemprop="dateModified" content="2018-10-21T15:43:48&#43;08:00" />
+<meta itemprop="wordCount" content="68">
 
 
 
@@ -75,8 +75,8 @@ df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable   Se
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Test"/>
 <meta name="twitter:description" content="Objective The purpose of this blah blah
-############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
-df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable   Season test    1989-90 42.28571  1990-91 48.80000  1991-92 30.37500  1992-93 46.00000  1993-94 49.75000  1994-95 47.62500     "/>
+############################## # - Load librairies ############################## library(dplyr) library(ggplot2) library(plotly) library(gapminder) library(knitr) library(kableExtra) library(RCurl) myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE) df &lt;- read.csv(textConnection(myfile), header=T)  testing
+df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable     Season  test      1989-90  42.28571    1990-91  48.80000    1991-92  30.37500    1992-93  46."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -130,7 +130,7 @@ df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable   Se
       <h1 class="post-title">Test</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2017-08-31 </span>
+        <span class="post-time"> 2018-10-21 </span>
         
         
         
@@ -163,6 +163,8 @@ library(ggplot2)
 library(plotly)
 library(gapminder)
 library(knitr)
+library(kableExtra)
+
 
 library(RCurl)
 myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv&#39;, ssl.verifyhost=FALSE, ssl.verifypeer=FALSE)
@@ -170,41 +172,79 @@ myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-784
 df &lt;- read.csv(textConnection(myfile), header=T)
 </code></pre>
 <p>testing</p>
-<pre class="r"><code>df %&gt;% group_by(Season) %&gt;% summarise(test = mean(Tows)) %&gt;% kable</code></pre>
+<pre class="r"><code>df %&gt;% 
+    group_by(Season) %&gt;% 
+    summarise(test = mean(Tows)) %&gt;% 
+    kable </code></pre>
 <table>
 <thead>
-<tr class="header">
-<th align="left">Season</th>
-<th align="right">test</th>
+<tr>
+<th style="text-align:left;">
+Season
+</th>
+<th style="text-align:right;">
+test
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">1989-90</td>
-<td align="right">42.28571</td>
+<tr>
+<td style="text-align:left;">
+1989-90
+</td>
+<td style="text-align:right;">
+42.28571
+</td>
 </tr>
-<tr class="even">
-<td align="left">1990-91</td>
-<td align="right">48.80000</td>
+<tr>
+<td style="text-align:left;">
+1990-91
+</td>
+<td style="text-align:right;">
+48.80000
+</td>
 </tr>
-<tr class="odd">
-<td align="left">1991-92</td>
-<td align="right">30.37500</td>
+<tr>
+<td style="text-align:left;">
+1991-92
+</td>
+<td style="text-align:right;">
+30.37500
+</td>
 </tr>
-<tr class="even">
-<td align="left">1992-93</td>
-<td align="right">46.00000</td>
+<tr>
+<td style="text-align:left;">
+1992-93
+</td>
+<td style="text-align:right;">
+46.00000
+</td>
 </tr>
-<tr class="odd">
-<td align="left">1993-94</td>
-<td align="right">49.75000</td>
+<tr>
+<td style="text-align:left;">
+1993-94
+</td>
+<td style="text-align:right;">
+49.75000
+</td>
 </tr>
-<tr class="even">
-<td align="left">1994-95</td>
-<td align="right">47.62500</td>
+<tr>
+<td style="text-align:left;">
+1994-95
+</td>
+<td style="text-align:right;">
+47.62500
+</td>
 </tr>
 </tbody>
 </table>
+<pre class="r"><code>df %&gt;% 
+    group_by(Season) %&gt;% 
+    summarise(test = mean(Tows)) %&gt;% 
+    ggplot(aes(x=Season, y =test)) + 
+    geom_point() + 
+    theme_light()</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/load3-1.png" width="672" /></p>
 </div>
 
     </div>
@@ -222,6 +262,11 @@ df &lt;- read.csv(textConnection(myfile), header=T)
       <nav class="post-nav">
         
         
+          <a class="next" href="/post/table1/">
+            <span class="next-text nav-default"></span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>

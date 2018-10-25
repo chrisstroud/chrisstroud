@@ -1,11 +1,10 @@
 ---
 title: "Test"
-date: 2017-08-31T15:43:48+08:00
+date: 2018-10-21T15:43:48+08:00
 lastmod: 2017-08-31T15:43:48+08:00
 draft: false
 author: "Chris Stroud"
 autoCollapseToc: false
-
 
 ---
 
@@ -27,6 +26,8 @@ library(ggplot2)
 library(plotly)
 library(gapminder)
 library(knitr)
+library(kableExtra)
+
 
 library(RCurl)
 myfile <- getURL('https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv', ssl.verifyhost=FALSE, ssl.verifypeer=FALSE)
@@ -40,8 +41,20 @@ testing
 
 
 ```{r load2, message=FALSE, warning=FALSE}
-df %>% group_by(Season) %>% summarise(test = mean(Tows)) %>% kable
+df %>% 
+	group_by(Season) %>% 
+	summarise(test = mean(Tows)) %>% 
+	kable 
+```
 
+
+```{r load3, message=FALSE, warning=FALSE}
+df %>% 
+	group_by(Season) %>% 
+	summarise(test = mean(Tows)) %>% 
+	ggplot(aes(x=Season, y =test)) + 
+	geom_point() + 
+	theme_light()
 
 ```
 
