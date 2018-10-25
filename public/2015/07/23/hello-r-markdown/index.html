@@ -1,20 +1,60 @@
+
+
+There are two possible situations that led to this error:
+  1. You haven&#39;t copied the config.toml yet. See https://github.com/olOwOlo/hugo-theme-even#installation 
+  2. You have an incompatible update. See https://github.com/olOwOlo/hugo-theme-even/blob/master/CHANGELOG.md#300 
+
+有两种可能的情况会导致这个错误发生:
+  1. 你还没有复制 config.toml 参考 https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md#installation 
+  2. 你进行了一次不兼容的更新 参考 https://github.com/olOwOlo/hugo-theme-even/blob/master/CHANGELOG.md#300 
 <!DOCTYPE html>
-<html lang="en-us">
-	<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hello R Markdown - A Hugo website</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<meta name="description" content="A website built through Hugo and blogdown.">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Frida Gomam" />
+  <meta name="description" content="R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu." />
+
+
+
+
+
+
+
 <meta name="generator" content="Hugo 0.49.2" />
-<title>Hello R Markdown</title>
-<link rel="shortcut icon" href="/images/favicon.ico">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/highlight.css">
+
+
+<link rel="canonical" href="/2015/07/23/hello-r-markdown/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
-<link rel="stylesheet" href="/css/monosocialiconsfont.css">
+
+
+
+
+<link href="/dist/even.min.css?v=3.2.0" rel="stylesheet">
+
 
 
 
@@ -27,8 +67,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 <meta property="og:url" content="/2015/07/23/hello-r-markdown/" /><meta property="article:published_time" content="2015-07-23T21:13:14-05:00"/>
 <meta property="article:modified_time" content="2015-07-23T21:13:14-05:00"/>
 
-
-
 <meta itemprop="name" content="Hello R Markdown">
 <meta itemprop="description" content="R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
@@ -37,62 +75,97 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
 
 <meta itemprop="datePublished" content="2015-07-23T21:13:14-05:00" />
 <meta itemprop="dateModified" content="2015-07-23T21:13:14-05:00" />
-<meta itemprop="wordCount" content="159">
+<meta itemprop="wordCount" content="194">
 
 
 
 <meta itemprop="keywords" content="R Markdown,plot,regression," />
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hello R Markdown"/>
 <meta name="twitter:description" content="R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu."/>
 
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
 
-    </head>
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
 <body>
-    <nav class="main-nav">
-	
-		<a href='/'> <span class="arrow">←</span>Home</a>
-	
-
-	
- 		<a href='/about/'>About</a>
-  	
- 		<a href='https://github.com/rstudio/blogdown'>GitHub</a>
-  	
- 		<a href='https://twitter.com/rstudio'>Twitter</a>
-  	
-
-	
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">A Hugo website</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="https://github.com/rstudio/blogdown">
+        <li class="mobile-menu-item">GitHub</li>
+      </a><a href="https://twitter.com/rstudio">
+        <li class="mobile-menu-item">Twitter</li>
+      </a>
+  </ul>
 </nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">A Hugo website</a>
+</div>
 
-    <section id="wrapper">
-        
-        
-<article class="post">
-    <header>
-        <h1>Hello R Markdown</h1>
-        <h2 class="subtitle"></h2>
-        <h2 class="headline">
-        July 23, 2015
-        <br>
-        
-        
-            
-                <a href="/tags/r-markdown">R Markdown</a>
-            
-                <a href="/tags/plot">plot</a>
-            
-                <a href="/tags/regression">regression</a>
-            
-        
-        
-        </h2>
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://github.com/rstudio/blogdown">GitHub</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="https://twitter.com/rstudio">Twitter</a>
+      </li>
+  </ul>
+</nav>
     </header>
-    <section id="post-body">
-        <div id="r-markdown" class="section level1">
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hello R Markdown</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2015-07-23 </span>
+        <div class="post-category">
+            
+              <a href="/categories/r/"> R </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    
+
+    
+    <div class="post-content">
+      <div id="r-markdown" class="section level1">
 <h1>R Markdown</h1>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>You can embed an R code chunk like this:</p>
@@ -130,67 +203,98 @@ pie(
 Figure 1: A fancy pie chart.
 </p>
 </div>
+<pre class="r"><code>library(dplyr)
+## 
+## Attaching package: &#39;dplyr&#39;
+## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag
+## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union
+names(iris) &lt;- tolower(names(iris))
+</code></pre>
 </div>
 
-    </section>
-</article>
-
-<footer id="post-meta" class="clearfix">
-    
-    <img class="avatar" src="/images/avatar.png">
-    <div>
-        <span class="dark"></span>
-        <span></span>
     </div>
-    
-    <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=%2f2015%2f07%2f23%2fhello-r-markdown%2f - Hello%20R%20Markdown "><span class="icon-twitter"> tweet</span></a>
-
-<a class="facebook" href="#" onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-      'facebook-share-dialog',
-      'width=626,height=436');
-    return false;"><span class="icon-facebook-rect"> Share</span>
-</a>
-
-    </section>
-</footer>
-
-
-
-<ul id="post-list" class="archive readmore">
-    <h3>Read more</h3>
 
     
     
+
     
-        <li>
-            <a href="/2016/12/30/a-plain-markdown-post/">A Plain Markdown Post<aside class="dates">Dec 30 2016</aside></a>
-        </li>
     
-        <li>
-            <a href="/2015/01/01/lorem-ipsum/">Lorem Ipsum<aside class="dates">Jan 1 2015</aside></a>
-        </li>
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/r-markdown/">R Markdown</a>
+          
+          <a href="/tags/plot/">plot</a>
+          
+          <a href="/tags/regression/">regression</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
     
-</ul>
+       - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author"></span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  
+
+
+<script type="text/javascript" src="/dist/even.min.js?v=3.2.0"></script>
 
 
 
-        <footer id="footer">
-    
-    <p class="small">
-    
-        © Copyright 2018 
-    
-    </p>
-</footer>
-
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 
 
