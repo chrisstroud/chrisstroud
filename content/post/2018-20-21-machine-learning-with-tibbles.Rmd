@@ -27,10 +27,9 @@ library(ggplot2)
 library(plotly)
 library(gapminder)
 library(knitr)
-library(kableExtra)
-
-
+library(plotly)
 library(RCurl)
+
 myfile <- getURL('https://sakai.unc.edu/access/content/group/3d1eb92e-7848-4f55-90c3-7c72a54e7e43/public/data/bycatch.csv', ssl.verifyhost=FALSE, ssl.verifypeer=FALSE)
 
 df <- read.csv(textConnection(myfile), header=T)
@@ -59,7 +58,7 @@ df %>%
 
 
 ```{r load3, message=FALSE, warning=FALSE, out.width = "100%"}
-df %>% 
+a <- df %>% 
 	group_by(Season) %>% 
 	summarise(test = mean(Tows)) %>% 
 	ggplot(aes(x=Season, y =test)) + 
@@ -67,6 +66,8 @@ df %>%
 	theme_light() +
 	theme(panel.background = element_rect(fill="#FFFCF7")) +
 	theme(plot.background = element_rect(fill = "#FFFCF7"))
+
+ggplotly(a)
 
 ```
 
