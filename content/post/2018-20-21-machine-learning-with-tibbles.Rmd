@@ -3,9 +3,7 @@ title: "Machine Learning with Tibbles"
 date: 2018-10-21T15:43:48+08:00
 lastmod: 2018-08-31T15:43:48+08:00
 author: "Chris Stroud"
-output:
-  blogdown::html_page:
-    toc: true
+
 
 ---
 
@@ -13,10 +11,7 @@ output:
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# Objective
-
-The purpose of this blah blah
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nunc eget est aliquam dignissim sed sed diam. Aliquam quis interdum sem. Suspendisse ultrices diam sed ornare vulputate. Aliquam erat volutpat. Morbi vitae egestas justo, lobortis elementum justo. Integer tincidunt eros id ultricies volutpat. Sed ullamcorper enim sit amet sollicitudin blandit. Donec cursus arcu vitae lorem condimentum bibendum. Nunc nec lectus sit amet elit malesuada sagittis in et mi. Nulla consequat, nibh ac imperdiet ultricies, mauris quam ornare tellus, sit amet rhoncus orci massa ac augue. Sed fringilla ultrices scelerisque. Ut porta neque sed eros tempor vehicula.
 
 ```{r load, message=FALSE, warning=FALSE, paged.print=FALSE}
 ##############################
