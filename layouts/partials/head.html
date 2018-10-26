@@ -61,7 +61,7 @@
 {{- end }}
 
 <!-- Styles -->
-{{ $style := resources.Get "sass/style.scss" | resources.ToCSS }}
+{{ $style := resources.Get "sass/style.scss" | resources.ToCSS (dict "enableSourceMap" true) }}
 <link href="{{ $style.Permalink }}" integrity=”{{ $style.Data.Integrity }}” rel="stylesheet">
 {{ if .Site.Params.publicCDN.enable -}}
   {{ if .Site.Params.fancybox }}{{ .Site.Params.publicCDN.fancyboxCss | safeHTML }}{{ end }}
