@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "npm i -g postcss-cli autoprefixer; hugo --enableGitInfo --buildFuture -b $DEPLOY_PRIME_URL"
+command = "npm i -g postcss-cli autoprefixer; hugo --enableGitInfo --buildFuture -b $URL"
 
 [context.production.environment]
 HUGO_VERSION = "0.49.2"
