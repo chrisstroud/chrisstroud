@@ -1,0 +1,47 @@
+// Home
+.home__tagline {
+    font-size: 1rem;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+// Post
+.post {
+    &__list {
+        margin-bottom: 1.0rem;
+    }
+
+    &__title--summary {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+
+        a {
+            $theme-color: #1A0DAB;
+            color: #1A0DAB;
+            text-decoration: none;
+            transition: all 0.1s ease-out;
+
+            &:hover {
+                color: #1A0DAB;
+                text-decoration: none;
+                padding-bottom: 1px;
+                border-bottom: 1px solid #1A0DAB;
+                background-color: #eee;
+            }
+        }
+    }
+
+    &__title--single {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-bottom: 2px;
+        text-decoration: none;
+        border-bottom: 3px solid #272727;
+    }
+
+    &__time--single {
+        font-style: italic;
+    }
+}

@@ -1,0 +1,6 @@
+<article class="post__list">
+    <h1 class="post__title--summary">
+        {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} &dash;
+        <a href="{{ .URL }}">{{ .Title }}</a>
+    </h1>
+</article>

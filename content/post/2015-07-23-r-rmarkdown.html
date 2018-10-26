@@ -12,7 +12,19 @@ autoCollapseToc: false
 
 <div id="objective" class="section level1">
 <h1>Objective</h1>
-<p>The purpose of this blah blah</p>
+<p>
+    The purpose of this etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod
+    semper. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper. Maecenas
+    faucibus mollis interdum.
+</p>
+<p>
+    Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis
+    ornare vel eu leo. Donec id elit non mi porta gravida at eget metus.
+</p>
+<p>
+    Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed
+    odio dui. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+</p>
 <pre class="r"><code>##############################
 # - Load librairies
 ##############################
@@ -30,9 +42,9 @@ myfile &lt;- getURL(&#39;https://sakai.unc.edu/access/content/group/3d1eb92e-784
 df &lt;- read.csv(textConnection(myfile), header=T)
 </code></pre>
 <p>testing</p>
-<pre class="r"><code>df %&gt;% 
-    group_by(Season) %&gt;% 
-    summarise(test = mean(Tows)) %&gt;% 
+<pre class="r"><code>df %&gt;%
+    group_by(Season) %&gt;%
+    summarise(test = mean(Tows)) %&gt;%
     kable </code></pre>
 <table>
 <thead>
@@ -96,11 +108,11 @@ test
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>df %&gt;% 
-    group_by(Season) %&gt;% 
-    summarise(test = mean(Tows)) %&gt;% 
-    ggplot(aes(x=Season, y =test)) + 
-    geom_point() + 
+<pre class="r"><code>df %&gt;%
+    group_by(Season) %&gt;%
+    summarise(test = mean(Tows)) %&gt;%
+    ggplot(aes(x=Season, y =test)) +
+    geom_point() +
     theme_light()</code></pre>
 <p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/load3-1.png" width="672" /></p>
 </div>
