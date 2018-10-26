@@ -1,0 +1,18 @@
+// ==============================
+// Header
+// ==============================
+
+.header:not(tr) {
+    @include clearfix;
+    padding: $header-padding;
+
+    @import '../../themes/even/src/css/_partial/_header/_logo';
+    @import '../../themes/even/src/css/_partial/_header/menu';
+}
+
+@include max-screen() {
+    .header:not(tr) {
+        padding: 50px 0 0;
+        text-align: center;
+    }
+}

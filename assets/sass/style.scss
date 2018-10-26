@@ -1,5 +1,24 @@
 @import "variables";
-@import "../../themes/even/src/css/style";
+
+// Original styles
+@import "../../themes/even/src/css/_variables";
+@import "../../themes/even/src/css/_common/utils";
+@import "../../themes/even/src/css/_common/animation";
+@import "../../themes/even/src/css/_base";
+@import "../../themes/even/src/css/_iconfont";
+@import "header";
+@import "../../themes/even/src/css/_partial/post";
+@import "../../themes/even/src/css/_partial/pagination";
+@import "../../themes/even/src/css/_partial/footer";
+@import "../../themes/even/src/css/_partial/archive";
+@import "../../themes/even/src/css/_partial/tags";
+@import "../../themes/even/src/css/_partial/categories";
+@import "../../themes/even/src/css/_partial/slideout";
+@import "../../themes/even/src/css/_partial/mobile";
+@import "../../themes/even/src/css/_partial/back-to-top";
+@import "../../themes/even/src/css/_partial/404";
+
+// Custom styles
 @import "tables";
 @import "custom";
 @import "overrides";
