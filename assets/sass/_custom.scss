@@ -1,3 +1,27 @@
+$blue-color: #1a0dab;
+
+// Menu
+.menu .menu-item:before {
+    display: none !important;
+    transition: none !important;
+}
+
+// Anchor Color
+.post__title--summary a,
+.menu .menu-item a {
+    color: $blue-color;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+        color: $blue-color;
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid $blue-color;
+        background-color: #eee;
+    }
+}
+
 // Home
 .home {
     &__tagline {
@@ -24,21 +48,6 @@
         margin: 0;
         font-size: 1rem;
         font-weight: 400;
-
-        a {
-            $theme-color: #1A0DAB;
-            color: #1A0DAB;
-            text-decoration: none;
-            transition: all 0.1s ease-out;
-
-            &:hover {
-                color: #1A0DAB;
-                text-decoration: none;
-                padding-bottom: 1px;
-                border-bottom: 1px solid #1A0DAB;
-                background-color: #eee;
-            }
-        }
     }
 
     &__title--single {
