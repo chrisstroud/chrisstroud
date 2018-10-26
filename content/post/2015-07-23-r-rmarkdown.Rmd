@@ -1,5 +1,8 @@
 ---
 title: "Test"
+output:
+  html_document:
+    toc: true
 date: 2018-10-21T15:43:48+08:00
 lastmod: 2017-08-31T15:43:48+08:00
 draft: false
@@ -51,19 +54,21 @@ df %>%
 
 
 ```{r load4, message=FALSE, warning=FALSE}
-df %>% head() %>% 
+df %>% 
 	kable 
 ```
 
 
 
-```{r load3, message=FALSE, warning=FALSE}
+```{r load3, message=FALSE, warning=FALSE, fig.width='100%'}
 df %>% 
 	group_by(Season) %>% 
 	summarise(test = mean(Tows)) %>% 
 	ggplot(aes(x=Season, y =test)) + 
-	geom_point() + 
-	theme_light()
+	geom_point(size = 5) + 
+	theme_light() +
+	theme(panel.background = element_rect(fill="#FFFCF7")) +
+	theme(plot.background = element_rect(fill = "#FFFCF7"))
 
 ```
 
