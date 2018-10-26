@@ -1,0 +1,65 @@
+$blue-color: #1a0dab;
+
+// Menu
+.menu .menu-item:before {
+    display: none !important;
+    transition: none !important;
+}
+
+// Anchor Color
+.post__title--summary a,
+.menu .menu-item a {
+    color: $blue-color;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+        color: $blue-color;
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid $blue-color;
+        background-color: #eee;
+    }
+}
+
+// Home
+.home {
+    &__tagline {
+        font-size: 1rem;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        color: $theme-color;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+}
+
+// Post
+.post {
+    &__list {
+        margin-bottom: 1.0rem;
+        padding-left: 10px;
+    }
+
+    &__title--summary {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    &__title--single {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-bottom: 2px;
+        text-decoration: none;
+        border-bottom: 3px solid #272727;
+    }
+
+    &__time--single {
+        font-style: italic;
+    }
+}

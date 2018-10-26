@@ -1,0 +1,124 @@
+.post {
+
+    >table,
+    .section>table {
+        max-width: 100%;
+        margin: 50px 0;
+        border-spacing: 0;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, .125);
+
+        thead tr {
+            background: $deputy-color;
+        }
+
+        th,
+        td {
+            padding: 5px 15px;
+            border: 1px double $content-table-border-color;
+        }
+
+        tr {
+            background-color: #f8f8f8;
+
+            &:hover {
+                background-color: $deputy-color;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+
+        >table,
+        .section>table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            display: block;
+            position: relative;
+            width: 100%;
+
+            th,
+            td {
+                margin: 0;
+                vertical-align: top;
+            }
+
+            th {
+                text-align: left;
+            }
+
+            thead {
+                display: block;
+                float: left;
+            }
+
+            tbody {
+                display: block;
+                width: auto;
+                position: relative;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            thead tr {
+                display: block;
+            }
+
+            th {
+                display: block;
+                text-align: right;
+            }
+
+            tbody tr {
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            td {
+                display: block;
+                min-height: 1.25em;
+                text-align: left;
+            }
+
+            /* sort out borders */
+            th {
+                border-bottom: 0;
+                border-left: 0;
+            }
+
+            td {
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 0;
+            }
+
+            tbody tr {
+                border-left: 1px solid #babcbf;
+            }
+
+            th:last-child,
+            td:last-child {
+                border-bottom: 1px solid #babcbf;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cf:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    * html .cf {
+        zoom: 1;
+    }
+
+    *:first-child+html .cf {
+        zoom: 1;
+    }
+}

@@ -1,0 +1,31 @@
+{{ define "content" }}
+  <p class="home__tagline">
+    Hi! My name is Chris Stroud. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis
+euismod. 🎉
+  </p>
+
+  <h1 class="home__title">Posts:</h1>
+
+  <section id="posts" class="posts home__posts">
+    {{/* (index .Site.Paginate) */}}
+    {{ $paginator := .Paginate (where (where .Data.Pages "Type" "post") ".Params.hiddenfromhomepage" "!=" true) }}
+    {{ range $paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </section>
+  <!-- pagination -->
+  <nav class="pagination">
+    {{ with $paginator.Prev }}
+      <a class="prev" href="{{ .URL }}">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">{{ T "prevPage" }}</span>
+      </a>
+    {{- end }}
+    {{ with $paginator.Next }}
+      <a class="next" href="{{ .URL }}">
+        <span class="next-text">{{ T "nextPage" }}</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    {{- end }}
+  </nav>
+{{ end }}

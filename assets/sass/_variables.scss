@@ -1,0 +1,14 @@
+// Colors
+$global-background: rgba(255, 250, 240, 0.5);
+$theme-color: #c02222;
+$deputy-color: #fff;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+$global-font-size: 18px;
+$global-font-family: 'Inconsolata', monospace;
+$global-serif-font-family: $global-font-family;
+
+// Logo
+$logo-font-size: 36px;
+$logo-font-family: $global-font-family;

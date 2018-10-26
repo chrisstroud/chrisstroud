@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="50">
+  <path stroke="#2d2d2d" stroke-width="50" d="M25 0v720"/>
+  <path stroke="#393939" stroke-width="50" d="M75 0v720"/>
+  <path stroke="#515151" stroke-width="50" d="M125 0v720"/>
+  <path stroke="#747369" stroke-width="50" d="M175 0v720"/>
+  <path stroke="#a09f93" stroke-width="50" d="M225 0v720"/>
+  <path stroke="#d3d0c8" stroke-width="50" d="M275 0v720"/>
+  <path stroke="#e8e6df" stroke-width="50" d="M325 0v720"/>
+  <path stroke="#f2f0ec" stroke-width="50" d="M375 0v720"/>
+  <path stroke="#f2777a" stroke-width="50" d="M425 0v720"/>
+  <path stroke="#f99157" stroke-width="50" d="M475 0v720"/>
+  <path stroke="#fc6" stroke-width="50" d="M525 0v720"/>
+  <path stroke="#9c9" stroke-width="50" d="M575 0v720"/>
+  <path stroke="#6cc" stroke-width="50" d="M625 0v720"/>
+  <path stroke="#69c" stroke-width="50" d="M675 0v720"/>
+  <path stroke="#c9c" stroke-width="50" d="M725 0v720"/>
+  <path stroke="#d27b53" stroke-width="50" d="M775 0v720"/>
+</svg>

@@ -1,0 +1,34 @@
+// General
+.slideout-panel {
+    background: $global-background;
+}
+
+// Color Header  Bar
+body {
+    border-top: 0;
+}
+.header__bar {
+    width: 100%;
+    height: 12px;
+    vertical-align: top;
+}
+
+// Posts
+.post .post-content {
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-weight: 700;
+        }
+    }
+
+    h1 {
+        font-size: 1.4em;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 150%;
+        margin-bottom: 15px;
+    }
+}
