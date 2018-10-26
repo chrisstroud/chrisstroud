@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "npm i -g postcss-cli autoprefixer; hugo"
 
 [context.production.environment]
 HUGO_VERSION = "0.49.2"
