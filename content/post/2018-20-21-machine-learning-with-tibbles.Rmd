@@ -1,13 +1,11 @@
 ---
-title: "Test"
-output:
-  html_document:
-    toc: true
+title: "Machine Learning with Tibbles"
 date: 2018-10-21T15:43:48+08:00
-lastmod: 2017-08-31T15:43:48+08:00
-draft: false
+lastmod: 2018-08-31T15:43:48+08:00
 author: "Chris Stroud"
-autoCollapseToc: false
+output:
+  blogdown::html_page:
+    toc: true
 
 ---
 
@@ -60,7 +58,7 @@ df %>%
 
 
 
-```{r load3, message=FALSE, warning=FALSE, fig.width='100%'}
+```{r load3, message=FALSE, warning=FALSE, out.width = "100%"}
 df %>% 
 	group_by(Season) %>% 
 	summarise(test = mean(Tows)) %>% 
